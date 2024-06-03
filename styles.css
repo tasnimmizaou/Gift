@@ -358,7 +358,7 @@ nav ul li a {
 .redirect-button {
     display: block;
     width: 200px;
-    margin: 20px auto;
+    margin: 3px auto;
     padding: 10px 20px;
     text-align: center;
     background-color: #007bff;
@@ -372,5 +372,42 @@ nav ul li a {
     background-color: #0056b3;
 }
 
+
+
+
+
+.gallery{
+    position:relative;
+    width:300px;
+    height:200px;
+    transform-style:preserve-3d;
+    animation:rotate 35s linear infinite;
+  }
+  
+  @keyframes rotate{
+    from{
+      transform:perspective(1200px) rotateY(0deg);
+    }
+    
+    to{
+      transform:perspective(1200px) rotateY(360deg);
+    }
+  }
+  
+  .gallery span{
+    position:absolute;
+    width:100%;
+    height:100%;
+    transform-origin:center;
+    transform-style:preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg)) translateZ(380px);
+  }
+  
+  .gallery span img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
 
   
