@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E0F7FA;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text */
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, section, footer {
+    width: 100%;
+    max-width: 600px;
+    margin: 1em 0; /* Add some spacing between sections */
+    padding: 1em;
+    background: #FFFFFF;
+    border: 2px solid #00BCD4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #00BCD4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #00BCD4;
+    text-decoration: none;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    flex-basis: calc(33.33% - 10px);
+    box-sizing: border-box;
+    border: 1px solid #86cce0;
+    padding: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Style for the video section */
+#videos {
+    padding: 20px;
+}
+
+/* Style for each video container */
+.video-container {
+    margin-bottom: 20px;
+}
+
+/* Style for embedded videos */
+.video-container iframe {
+    width: 100%; /* Make the video fill the container width */
+    height: 315px; /* Set a fixed height for consistency */
+}
+
+/* Style for video descriptions or captions */
+.video-container p {
+    margin-top: 10px; /* Add space between the video and the description */
+    font-style: italic;
+    color: #888;
+}
+
+
+
